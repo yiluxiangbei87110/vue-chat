@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="app5">
+		<p>{{message}}</p>
+		<button v-on:click="reverseMessage">点击上面的文字进行翻转</button>
+	</div>
+	<script type="text/javascript">
+		var app=new Vue({
+			el:'#app5',
+			data:{
+				message:"hello Felix"
+			},
+			methods:{
+				reverseMessage:function(){
+					this.message=this.message.split('').reverse().join('');
+				}
+			}
+		})
+	</script>
+</body>
+</html>

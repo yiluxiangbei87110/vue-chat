@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="app-4">
+        <ol>
+            <li v-for="a in todas">
+                {{a.text}}
+            </li>
+        </ol>
+    </div>
+    <script type="text/javascript">
+    var app = new Vue({
+        el: '#app-4',
+        data: {
+            todas: [{
+                text: 'javascript高级程序设计'
+            }, {
+                text: 'javascript设计模式'
+            }, {
+                text: "vue"
+            }]
+        }
+    });
+    app.todas.push({text:'在苍茫的大海上'});
+    </script>
+</body>
+
+</html>
