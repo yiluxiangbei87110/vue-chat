@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>computed and methods</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="example">
+        <p>origion message: {{message}}</p>
+        <p>computed reversed message: {{reversedMesage()}}</p>
+    </div>
+    <script type="text/javascript">
+    //注意computed和methods书写方式是相同的，但是methods调用的时候需要一个（），否则的话将会报错。
+    //computed 默认只用getter但是也可以给其增加setter方法。
+        var app=new Vue({
+            el:'#example',
+            data:{
+                message:'hello Felix'
+            },
+            methods:{
+                reversedMesage:function(){
+                    return this.message.split('').reverse().join('');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

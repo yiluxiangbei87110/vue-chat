@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <!-- my-Component标签中的C不嫩大写，大写就错，难道是命名规范问题？？？？？？ -->
+    <div id="app7">
+        <my-component></my-component>
+    </div>
+    <script type="text/javascript">
+    Vue.component('my-component', {
+        template: '<div>去年元夜时，花市灯如昼！</div>'
+    });
+
+    new Vue({
+        el: '#app7'
+    })
+
+    //也可以进行局部绑定
+    // var Child = {
+    //     template: '<div>A custom component!</div>'
+    // }
+    // new Vue({
+    //     // ...
+    //     components: {
+    //         // <my-component> 将只在父模板可用
+    //         'my-component': Child
+    //     }
+    // })
+    </script>
+</body>
+
+</html>
