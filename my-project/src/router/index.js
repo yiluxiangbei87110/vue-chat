@@ -1,16 +1,24 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-//定义要路由模块
-import Layout from '@/components/Layout'
-import IndexPage from '@/components/pages/IndexPage'
+import HelloWorld from '@/components/HelloWorld'
+import Main from '@/components/Main'
+import Header from '@/components/Header'
 Vue.use(Router)
 
 export default new Router({
-    //设置mode：history将会导致地址栏的hash值消失
-    mode: 'history',
-    routes: [{
-        path: '/',
-        name: 'indexpage',
-        component: IndexPage
-    }]
+  routes: [
+    {
+      path: '/',
+      name: 'Main',
+      component: Main
+    }, {
+      path: '/hello',
+      name: 'HelloWorld',
+      component: HelloWorld
+    },{
+      path: '/header',
+      name: 'Header',
+      component: Header
+    }
+  ]
 })
