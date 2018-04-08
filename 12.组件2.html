@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="example-2">
+        <simple-counter></simple-counter>
+        <simple-counter></simple-counter>
+        <simple-counter></simple-counter>
+    </div>
+    <script type="text/javascript">
+    var data = {
+        count: 0
+    };
+    Vue.component('simple-counter', {
+        template: "<button v-on:click='count+=1'>{{count}}</button>",
+        data: function() {
+            //这样导致所有的模板是同时改变的。
+            //return data; data return必须是一个对象
+            return {
+                count : 0
+            }
+        }
+    });
+    new Vue({
+        el: '#example-2',
+
+    });
+    </script>
+</body>
+
+</html>
