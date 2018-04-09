@@ -11,37 +11,57 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  name: 'Header',
-  data () {
+  name: "Header",
+  created(){
+      this.getData()
+  },
+  data() {
     return {
       msg: "it's Header"
+    };
+  },
+  methods: {
+    getData() {
+      axios
+        .get("http://www.toutiao.com/api/pc/hot_gallery",{
+            params:{
+                widen:1
+            }
+        })
+        .then(function(response) {
+          console.log(response);
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
     }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .header{
-        display:flex;
-        height:34px;
-        line-height: 34px;
-        background: #222;
-        font-size: 14px;
-        color: #fff;
-    }
-    .header-left{
-        flex:1;
-        justify-content:start;
-    }
-    .header-right{
-        width:280px;
-        display:flex;
-        justify-content:space-around;
-    }
-     .header-right a{
-        color: #fff;
-        text-decoration:none;
-    }
+.header {
+  display: flex;
+  height: 34px;
+  line-height: 34px;
+  background: #222;
+  font-size: 14px;
+  color: #fff;
+}
+.header-left {
+  flex: 1;
+  justify-content: start;
+}
+.header-right {
+  width: 280px;
+  display: flex;
+  justify-content: space-around;
+}
+.header-right a {
+  color: #fff;
+  text-decoration: none;
+}
 </style>
