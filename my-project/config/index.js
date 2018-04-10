@@ -10,7 +10,19 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api/getNewsList': {
+        target: 'https://www.toutiao.com/api/pc/hot_gallery/',
+        byPass: function (req, res, proxyOptions) {
+          req.headers.referer = "https://www.toutiao.com";
+          req.headers.host = "toutiao.com";
+        },
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api/getNewsList': ''
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -20,7 +32,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */

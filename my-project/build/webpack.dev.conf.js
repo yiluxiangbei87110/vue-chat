@@ -93,3 +93,67 @@ module.exports = new Promise((resolve, reject) => {
     }
   })
 })
+
+
+
+
+//const express = require('express')
+// const app = express()
+// var axios=require('axios');
+// var apiRoutes=express.Router();
+
+
+
+
+// apiRouter.get('/getNewsList', function(req, res) {
+//     var url = 'https://www.toutiao.com/api/pc/hot_gallery/'
+//     axios.get(url, {
+//         headers: {
+//             Host: 'www.toutiao.com',
+//             Referer: 'https://www.toutiao.com/'
+//         },
+//         params: req.query
+//     }).then((response) => {
+//         res.json(response.data)
+//     }).catch((e) => {
+//         console.log(e)
+//     })
+// })
+
+
+//app.use('/api', apiRouter)
+
+// const axios = require('axios')
+// const express = require('express')
+// const app = express()
+// const apiRoutes = express.Router()
+// app.use('/api', apiRoutes)
+
+// before(app){
+//   app.get('/getNewsList', (req, res) => {
+//         var url = 'https://www.toutiao.com/api/pc/hot_gallery/'
+//         axios.get(url, {
+//         headers: {
+//             Host: 'www.toutiao.com',
+//             Referer: 'https://www.toutiao.com/'
+//         },
+//         params: req.query
+//     }).then((response) => {
+//         res.json(response.data)
+//     }).catch((e) => {
+//         console.log(e)
+//     })
+//   })
+// }
+//注意这是重点
+var proxyMiddleware = require('http-proxy-middleware')
+const express = require('express')
+const app = express();
+var proxyTable = config.dev.proxyTable;
+Object.keys(proxyTable).forEach(function (context) {
+  var options = proxyTable[context];
+  if (typeof options === 'string') {
+    options = { target: options }
+  }
+  app.use(proxyMiddleware(options.filter || context, options))
+})

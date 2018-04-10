@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import {getNewsList} from './../api/api.js'
 export default {
   name: "Header",
   created(){
@@ -24,18 +24,9 @@ export default {
   },
   methods: {
     getData() {
-      axios
-        .get("http://www.toutiao.com/api/pc/hot_gallery",{
-            params:{
-                widen:1
-            }
-        })
-        .then(function(response) {
-          console.log(response);
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
+ getNewsList().then((res)=>{
+        console.log(res.data)
+      })
     }
   }
 };
