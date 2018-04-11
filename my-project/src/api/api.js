@@ -54,3 +54,27 @@ return axios.get(url, {
 	return Promise.resolve(res.data)
 })
 }
+
+export function getFocus() {
+	const url = '/api/focus'
+	const data = {
+		widen:1
+	};
+return axios.get(url, {
+	params: data
+}).then((res) => {
+	return Promise.resolve(res.data)
+})
+}
+
+export function getFeed() {
+	const url = '/api/feed'
+	const data = {
+		widen:1,
+	};
+return axios.get(url, {
+	params: data
+}).then((res) => {
+	return Promise.resolve(res.data)
+})
+}

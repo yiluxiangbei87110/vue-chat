@@ -21,13 +21,41 @@ module.exports = {
         pathRewrite: {
           '^/api/getNewsList': ''
         }
-      }
+      },
+      '/api/focus': {
+        target: 'https://www.toutiao.com/api/pc/focus/',
+        byPass: function (req, res, proxyOptions) {
+          req.headers.referer = "https://www.toutiao.com";
+          req.headers.host = "toutiao.com";
+        },
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api/focus': ''
+        }
+      },
+      '/api/feed': {
+        target: 'https://www.toutiao.com/api/pc/feed/?min_behot_time=0&category=__all__&utm_source=toutiao&widen=1&tadrequire=true&as=A185AA4CAEF1B2D&cp=5ACE11DB726D5E1&_signature=ogBxyBAf-N0MSzxpi14sHKIAcd',
+        byPass: function (req, res, proxyOptions) {
+          req.headers.referer = "https://www.toutiao.com";
+          req.headers.host = "toutiao.com";
+        },
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api/focus': ''
+        }
+      },
+
+
+
+
+
+
     },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    autoOpenBrowser: false,
+    autoOpenBrowser: true,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-

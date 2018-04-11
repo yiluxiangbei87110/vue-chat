@@ -1,0 +1,805 @@
+@charset "UTF-8";
+blockquote,
+body,
+button,
+caption,
+dd,
+div,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+input,
+legend,
+li,
+menu,
+ol,
+p,
+pre,
+table,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+address,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+caption,
+th {
+    text-align: left;
+    font-weight: 400
+}
+
+abbr,
+body,
+fieldset,
+html,
+iframe,
+img {
+    border: 0
+}
+
+address,
+cite,
+dfn,
+em,
+i,
+var {
+    font-style: normal
+}
+
+[hidefocus],
+summary {
+    outline: 0
+}
+
+li {
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+    font-size: 100%
+}
+
+sub,
+sup {
+    font-size: 83%
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: inherit
+}
+
+q:after,
+q:before {
+    content: none
+}
+
+textarea {
+    overflow: auto;
+    resize: none
+}
+
+label,
+summary {
+    cursor: default
+}
+
+a,
+button {
+    cursor: pointer
+}
+
+b,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 400
+}
+
+a,
+a:hover,
+del,
+ins,
+s,
+u {
+    text-decoration: none
+}
+
+body,
+button,
+input,
+keygen,
+legend,
+select,
+textarea {
+    font: 12px/1.14 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    outline: 0
+}
+
+body {
+    background: #fff
+}
+
+a {
+    color: #222
+}
+
+a:hover {
+    color: #406599
+}
+
+a:visited {
+    color: #999
+}
+
+.y-icon.icon-share:before {
+    content: "\e600"
+}
+
+.y-icon.icon-img:before {
+    content: "\e601"
+}
+
+.y-icon.icon-video:before {
+    content: "\e602"
+}
+
+.y-icon.icon-like:before {
+    content: "\e603"
+}
+
+.y-icon.icon-line:before {
+    content: "\e604"
+}
+
+.y-icon.icon-location:before {
+    content: "\e605"
+}
+
+.y-icon.icon-location:hover {
+    color: rgba(255, 255, 255, .7)
+}
+
+.y-icon.icon-logo {
+    font-size: 106px;
+    color: #f85959
+}
+
+.y-icon.icon-logo:before {
+    content: "\e606"
+}
+
+.y-icon.icon-more {
+    color: #444
+}
+
+.y-icon.icon-more:before {
+    content: "\e607"
+}
+
+.y-icon.icon-last:before {
+    content: "\e608"
+}
+
+.y-icon.icon-next:before {
+    content: "\e609"
+}
+
+.y-icon.icon-search {
+    font-size: 16px;
+    color: #ddd
+}
+
+.y-icon.icon-search:before {
+    content: "\e60a"
+}
+
+.y-icon.icon-follow {
+    color: #ddd;
+    font-size: 26px
+}
+
+.y-icon.icon-follow:before {
+    content: "\e60c"
+}
+
+.y-icon.icon-home:before {
+    content: "\e60d"
+}
+
+.y-icon.icon-last-page:before {
+    content: "\e60e"
+}
+
+.y-icon.icon-next-page:before {
+    content: "\e60f"
+}
+
+.y-icon.icon-related-article:before {
+    content: "\e610"
+}
+
+.y-icon.icon-arrow-top {
+    color: #ddd;
+    font-size: 20px
+}
+
+.y-icon.icon-arrow-top:before {
+    content: "\e611"
+}
+
+.y-icon.icon-unfollow {
+    color: #ddd;
+    font-size: 26px
+}
+
+.y-icon.icon-unfollow:before {
+    content: "\e612"
+}
+
+.y-icon.icon-video-play:before {
+    content: "\e613"
+}
+
+.y-icon.icon-refresh:before {
+    content: "\e614"
+}
+
+.y-icon.icon-error:before {
+    content: "\e615"
+}
+
+.y-icon.icon-headlogin:before {
+    content: "\e616"
+}
+
+.y-icon.icon-errormessage:before {
+    content: "\e617"
+}
+
+.y-icon.icon-clearicon:before {
+    content: "\e618"
+}
+
+.y-icon.icon-correct:before {
+    content: "\e619"
+}
+
+.y-icon.icon-palyvediochannle:before {
+    content: "\e61a"
+}
+
+.y-icon.icon-articlechannel:before {
+    content: "\e61b";
+    color: #7e91f2
+}
+
+.y-icon.icon-childcarechannel:before {
+    content: "\e61d";
+    color: #ffc000
+}
+
+.y-icon.icon-dislikenewfeed:before {
+    content: "\e61e"
+}
+
+.y-icon.icon-entertainmentchannel:before {
+    content: "\e61f";
+    color: #46c9d5
+}
+
+.y-icon.icon-explorechannel:before {
+    content: "\e620";
+    color: #2fd38f
+}
+
+.y-icon.icon-fashionchannel:before {
+    content: "\e621";
+    color: #9b75fb
+}
+
+.y-icon.icon-financechannel:before {
+    content: "\e622";
+    color: #ffc000
+}
+
+.y-icon.icon-foodchannel:before {
+    content: "\e623";
+    color: #ff8b11
+}
+
+.y-icon.icon-funnychannel:before {
+    content: "\e624";
+    color: #ff8b11
+}
+
+.y-icon.icon-healthchannel:before {
+    content: "\e626";
+    color: #88db4a
+}
+
+.y-icon.icon-historychannel:before {
+    content: "\e627";
+    color: #ff5f67
+}
+
+.y-icon.icon-imagechannel:before {
+    content: "\e629";
+    color: #778ce6
+}
+
+.y-icon.icon-internationalchannel:before {
+    content: "\e62a";
+    color: #ff5f67
+}
+
+.y-icon.icon-localchannel:before {
+    content: "\e62c"
+}
+
+.y-icon.icon-militarychannel:before {
+    content: "\e62e";
+    color: #517aff
+}
+
+.y-icon.icon-morechannel:before {
+    content: "\e62f";
+    color: #439fcf
+}
+
+.y-icon.icon-olympicchannel:before {
+    content: "\e630";
+    color: #ffc000
+}
+
+.y-icon.icon-recommandchannel:before {
+    content: "\e631";
+    color: #ff6464
+}
+
+.y-icon.icon-searchheader:before {
+    content: "\e632"
+}
+
+.y-icon.icon-sportschannel:before {
+    content: "\e634";
+    color: #854ad6
+}
+
+.y-icon.icon-technologychannel:before {
+    content: "\e635";
+    color: #44a8ff
+}
+
+.y-icon.icon-travelchannel:before {
+    content: "\e636";
+    color: #44a8ff
+}
+
+.y-icon.icon-videochannel:before {
+    content: "\e637";
+    color: #46c9d5
+}
+
+.y-icon.icon-hotchannel:before {
+    content: "\e638";
+    color: #ff8b11
+}
+
+.y-icon.icon-jokechannel:before {
+    content: "\e639";
+    color: #2fd38f
+}
+
+.y-icon.icon-socialchannel:before {
+    content: "\e63a";
+    color: #2fd38f
+}
+
+.y-icon.icon-medicinechannel:before {
+    content: "\e63b";
+    color: #ff6464
+}
+
+.y-icon.icon-carchannel:before {
+    content: "\e63c";
+    color: #9b75fb
+}
+
+.y-icon.icon-gamechannel:before {
+    content: "\e63d";
+    color: #85da46
+}
+
+.y-icon.icon-travelchannel1:before {
+    content: "\e63e"
+}
+
+.y-icon.icon-backtotopfeed:before {
+    content: "\e63f"
+}
+
+.y-icon.icon-storychannel:before {
+    content: "\e61c";
+    color: #60a3f5
+}
+
+.y-icon.icon-handup:before {
+    content: "\e64a"
+}
+
+.y-icon.icon-refreshfeed:before {
+    content: "\e640"
+}
+
+.y-icon.icon-comment:before {
+    content: "\e6d9"
+}
+
+.y-icon.icon-handdown:before {
+    content: "\e6db"
+}
+
+.y-icon.icon-favorite:before {
+    content: "\e62d"
+}
+
+.y-icon.icon-favorite-active:before {
+    content: "\e652"
+}
+
+.y-icon.icon-comments:before {
+    content: "\e649"
+}
+
+.y-icon.icon-digg:before {
+    content: "\e64a"
+}
+
+.y-icon.icon-thumbsdown_normal:before {
+    content: "\e6db"
+}
+
+.y-icon.icon-favorite:before {
+    content: "\e64b"
+}
+
+.y-icon.icon-qzone:before {
+    content: "\e64c"
+}
+
+.y-icon.icon-report:before {
+    content: "\e64d"
+}
+
+.y-icon.icon-sina:before {
+    content: "\e64e"
+}
+
+.y-icon.icon-tag:before {
+    content: "\e64f"
+}
+
+.y-icon.icon-wechat:before {
+    content: "\e650"
+}
+
+.y-icon.icon-check:before {
+    content: "\e643"
+}
+
+.y-icon.icon-more-up:before {
+    content: "\e653"
+}
+
+.y-icon.icon-close-popover:before {
+    content: "\e6dd"
+}
+
+.y-icon.icon-nqzone:before {
+    content: "\e6d3"
+}
+
+.y-icon.icon-copylink:before {
+    content: "\e6d4"
+}
+
+.y-icon.icon-nsina:before {
+    content: "\e6d5"
+}
+
+.y-icon.icon-nqq:before {
+    content: "\e6d6"
+}
+
+.y-icon.icon-nwechat:before {
+    content: "\e6d7"
+}
+
+.y-icon.icon-askiconwrite:before {
+    content: "\e642"
+}
+
+.y-icon.icon-answer_big_wenda:before {
+    content: "\e6e9"
+}
+
+.y-icon.icon-answer_small_wenda:before {
+    content: "\e6ea"
+}
+
+.y-icon.icon-follow_wenda:before {
+    content: "\e6e7"
+}
+
+.y-icon.icon-source-pic:before {
+    content: "\e6e4"
+}
+
+.y-icon.icon-next-pic:before {
+    content: "\e6e6"
+}
+
+.y-icon.icon-add:before {
+    content: "\e6ec"
+}
+
+.y-icon.icon-comments_details:before {
+    content: "\e6d9"
+}
+
+.y-icon.icon-trash:before {
+    content: "\e6eb"
+}
+
+.y-icon.icon-vstar:before {
+    content: "\e641"
+}
+
+.promotion-ext {
+    position: fixed;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    right: 10px;
+    bottom: -160px;
+    width: 362px;
+    height: 146px;
+    background: #FFF;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, .4);
+    border-radius: 6px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 18px;
+    z-index: 9999
+}
+
+.promotion-ext.show {
+    bottom: 10px
+}
+
+.promotion-ext a {
+    display: inline-block
+}
+
+.promotion-ext .img-wrap {
+    width: 110px;
+    height: 110px
+}
+
+.promotion-ext .img-wrap img {
+    width: 100%;
+    height: 100%
+}
+
+.promotion-ext .desc {
+    padding-left: 14px
+}
+
+.promotion-ext .desc h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #222
+}
+
+.promotion-ext .desc .add {
+    background: #2A90D7;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #FFF;
+    padding: 6px 12px;
+    margin-top: 12px
+}
+
+.promotion-ext .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    color: #cacaca;
+    cursor: pointer;
+    font-size: 16px
+}
+
+.y-wrap {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    z-index: 1
+}
+
+.y-wrap .y-container {
+    clear: left
+}
+
+.y-wrap .y-container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden
+}
+
+.y-wrap .y-box {
+    display: block
+}
+
+.y-wrap .y-box:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden
+}
+
+.y-wrap .y-last {
+    display: block
+}
+
+.y-wrap .y-left {
+    float: left;
+    *margin-right: -3px
+}
+
+.y-wrap .y-right {
+    float: right;
+    *margin-right: -3px
+}
+
+.y-wrap .y-w25 {
+    width: 25%
+}
+
+.y-wrap .y-w33 {
+    width: 33.333333%
+}
+
+.y-wrap .y-w50 {
+    width: 50%
+}
+
+.y-wrap .y-w54 {
+    width: 54%
+}
+
+.y-wrap .y-w66 {
+    width: 66.66666%
+}
+
+.y-wrap .y-w75 {
+    width: 75%
+}
+
+.y-wrap .y-w350 {
+    width: 350px
+}
+
+.y-wrap .y-overlap-r {
+    margin-right: -1px;
+    *margin-right: -4px
+}
+
+.y-wrap .y-overlap-x {
+    margin-right: -1px;
+    *margin-right: -1px
+}
+
+.y-wrap .y-overlap-l {
+    margin-left: -1px;
+    padding-left: 2px;
+    *margin-left: -4px
+}
+
+.y-wrap .y-bfc-hidden {
+    overflow: hidden;
+    *overflow: visible
+}
+
+.y-wrap .y-bfc-auto {
+    overflow: auto
+}
+
+.y-wrap .y-bfc-table {
+    display: table
+}
+
+.y-wrap .y-bfc-itable {
+    display: inline-table
+}
+
+.y-wrap .y-bfc-cell {
+    display: table-cell
+}
+
+.y-wrap .y-bfc-iblock {
+    display: inline-block
+}
+
+a[href^='http://www.cnzz.com/stat'] {
+    display: none !important
+}
+
+@font-face {
+    font-family: yFont;
+    src: url(//s3.pstatp.com/toutiao/resource/ntoutiao_web/static/fonts/yFont_30fcbd2.eot?v=0.0.1);
+    src: url(//s3.pstatp.com/toutiao/resource/ntoutiao_web/static/fonts/yFont_30fcbd2.eot?v=0.0.1#iefix) format("embedded-opentype"), url(//s3.pstatp.com/toutiao/resource/ntoutiao_web/static/fonts/yFont_c580e17.woff?v=0.0.1) format("woff"), url(//s3b.pstatp.com/toutiao/resource/ntoutiao_web/static/fonts/yFont_8013b15.ttf?v=0.0.1) format("truetype"), url(//s3b.pstatp.com/toutiao/resource/ntoutiao_web/static/fonts/yFont_557beca.svg?v=0.0.1#yFont) format("svg")
+}
+
+.y-icon {
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    font-family: yFont !important;
+    font-size: 12px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}

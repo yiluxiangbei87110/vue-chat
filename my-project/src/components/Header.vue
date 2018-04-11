@@ -11,24 +11,31 @@
 </template>
 
 <script>
-import {getNewsList} from './../api/api.js'
+import {getNewsList,getFocus} from './../api/api.js'
 export default {
-  name: "Header",
-  created(){
-      this.getData()
-  },
-  data() {
-    return {
-      msg: "it's Header"
-    };
-  },
-  methods: {
-    getData() {
- getNewsList().then((res)=>{
-        console.log(res.data)
-      })
-    }
-  }
+//   name: "Header",
+//   created(){
+//       this.getData();
+//       this._getFocus();
+//   },
+//   data() {
+//     return {
+//       msg: "it's Header"
+//     };
+//   },
+//   methods: {
+//     getData() {
+//  getNewsList().then((res)=>{
+//         console.log(res.data)
+//       })
+//     },
+//     _getFocus(){
+//           getFocus().then((res)=>{
+//       console.log(res.data)
+//     })
+//     }
+
+//   }
 };
 </script>
 
