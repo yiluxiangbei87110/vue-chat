@@ -39,7 +39,7 @@ export default {
     body{
       margin:0;
     }
-    ul{
+    ul,li{
       list-style-type: none;
     }
     a:link{
