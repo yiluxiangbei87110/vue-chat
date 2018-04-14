@@ -6,21 +6,21 @@
 		    </div>
 	          <div class="xw-header-content" @touchstart="showInfo">
 	              <div v-if="!toShowMaskInfo" :class="[toShowMaskInfo ? '' : 'bounceInRight' , 'animated']">
-	                <img src="https://kf.163.cn/service/ui/resources/images/gx_logo16.png" class="xw-header-avatar">
+	                <img src="static/images/logo.jpg" class="xw-header-avatar">
 	                <div class="xw-header-title-wrap">
-	                  <div class="xw-header-title">小微客服</div>
+	                  <div class="xw-header-title">小薇客服</div>
 	                </div>
 	              </div>
 	          </div>
-	          <!-- 小微客服弹出的具体信息 -->
+	          <!-- 小薇客服弹出的具体信息 -->
 	          <div v-show="toShowMaskInfo" :class="[toShowMaskInfo ? 'bounceInDown' : '' , 'xw-show-info-box', 'animated']">
 	            <div class="xw-logo">
-	              <img src="https://kf.163.cn/service/ui/resources/images/gx_logo16.png">
-	              <h4>小微客服</h4>
+	              <img src="static/images/logo.jpg">
+	              <h4>小薇客服</h4>
 	            </div>
 	            <div class="xw-header-info">
 	              <p class="animated bounceInLeft">
-	                小微客服产品，集成了电话呼叫中心、IM在线客服、移动在线客服、微信、微博、移动APP SDK、邮件等全客服渠道，用工单系统承载售后服务，配合帮助中心、智能机器人等自助服务。
+	                小薇客服产品，集成了电话呼叫中心、IM在线客服、移动在线客服、微信、微博、移动APP SDK、邮件等全客服渠道，用工单系统承载售后服务，配合帮助中心、智能机器人等自助服务。
 	              </p>
 	            </div>
 	          </div>
@@ -35,7 +35,7 @@
                   <div class="xw-chat-servicer">
                     <div class="xw-servicer-avantar-wrap">
                       <img
-                        src="/static/images/male.jpg" class="xw-servicer-avantar">
+                        src="/static/images/logo.jpg" class="xw-servicer-avantar">
                     </div>
                     <div class="xw-chat-msg">
                       <span v-html="replaceFace(messageList.content)"></span>
@@ -136,7 +136,6 @@
 	    </div>
 
 	    <!--客服评分-->
-	    <!-- <evaluate v-if="showScore"></evaluate> -->
 	    <evaluate :ScoreDB="ScoreDB" :showScore="showScore" @on-star="selectStar" @confirm-star="confrmStar"> 
       </evaluate>
 
@@ -173,7 +172,7 @@ return {
 	records: [{
 		type: 1,
 		time: new Date().toLocaleTimeString(),
-		content: '您好！欢迎来到小微客服，请问有什么能帮到您？如有疑问请在线咨询或者拨打400-926-2012咨询！感谢您的支持! '
+		content: '您好！欢迎来到小薇客服，请问有什么能帮到您？如有疑问请在线咨询或者拨打400-926-2012咨询！感谢您的支持! '
 		}, 
 		{
 		type: 2,
@@ -359,5 +358,173 @@ methods: {
 .slide-fade-enter, .slide-fade-leave-to {
   transform: translateX(20px);
   opacity: 0;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+@-webkit-keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+@-webkit-keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
 }
 </style>

@@ -70,7 +70,7 @@ export default {
     text-align: center;
     width: 100%;
     font-size: 18px;
-    background: #5d94f3;
+    background: #ed4858;
     width: 50%;
     border-radius:5px;
     color: #fff;

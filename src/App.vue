@@ -121,7 +121,7 @@ ul{
 .xw-header {
   z-index: 2;
   max-height: 360px;
-  background: #5d94f3;
+  background: #ed4858;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
 }
 
@@ -202,14 +202,14 @@ ul{
 }
 .xw-send-btn-text{
   padding: 4px 8px;
-  background-color:#5d94f3;
+  background-color:#ed4858;
   color: #fff;
   border-radius: 5px;
 }
 .xw-customer-avantar-wrap {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 8px;
   line-height: 0;
 }
 
@@ -269,10 +269,10 @@ ul{
 .xw-chat-customer .xw-chat-msg {
   float: right;
   text-align: left;
-  background: #5d94f3;
-  border-color: #5d94f3;
+  background: #ed4858;
+  border-color: #ed4858;
   color: #fff;
-  margin-right: 35px;
+  margin-right: 45px;
 }
 .xw-customer-avantar{
   border-radius: 50%;
@@ -522,7 +522,7 @@ ul{
   height: 0;
   width: 0;
   border: 10px solid transparent;
-  border-bottom: 10px solid #5d94f3;
+  border-bottom: 10px solid #ed4858;
   right: -10px;
   border-left-width: 9px;
 }
@@ -552,7 +552,7 @@ ul{
   height: 200px;
   margin-top: -50px;
   z-index: 1000;
-  background: #5d94f3;
+  background: #ed4858;
   color:#fff;
 }
 
@@ -661,7 +661,7 @@ ul{
   min-height: 340px;
 }
 .mint-swipe-indicator.is-active {
-  background: #5d94f3;
+  background: #ed4858;
   opacity: 1;
 }
 </style>
