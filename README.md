@@ -28,9 +28,8 @@ npm test
 
 ```
 #test
-![](https://github.com/yiluxiangbei87110/vue-chat/blob/master/index.html)
 
-[链接到百度](https://www.baidu.com "百度")  
-[链接](https://github.com/yiluxiangbei87110/vue-chat/blob/master/static/images/wx.gif)
+![](https://github.com/yiluxiangbei87110/vue-chat/blob/master/static/images/wx.gif)
+[链接](https://github.com/yiluxiangbei87110/vue-chat/blob/master/index.html)
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
