@@ -1,6 +1,6 @@
 # wapchat
 
-> wxcrm wapchat
+> 基于vue2.5的聊天界面开发
 
 ## Build Setup
 
@@ -25,6 +25,11 @@ npm run e2e
 
 # run all tests
 npm test
+
 ```
+#test
+![](https://github.com/yiluxiangbei87110/vue-chat/blob/master/index.html)
+
+![](https://github.com/yiluxiangbei87110/vue-chat/blob/master/static/images/wx.gif)
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
