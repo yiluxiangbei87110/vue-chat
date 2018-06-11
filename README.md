@@ -31,4 +31,8 @@ npm test
 
 ![](https://github.com/yiluxiangbei87110/vue-chat/blob/master/static/images/wx.gif)
 
+# 此版本源代码未更新
+![](https://github.com/yiluxiangbei87110/vue-chat/blob/master/static/images/new.gif)
+
+
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
