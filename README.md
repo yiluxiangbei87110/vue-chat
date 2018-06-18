@@ -1,4 +1,4 @@
-# wapchat
+# wue-chat
 
 > 基于vue2.5的聊天界面开发
 
@@ -27,12 +27,14 @@ npm run e2e
 npm test
 
 ```
-#test
+### test
 
 ![](https://github.com/yiluxiangbei87110/vue-chat/blob/master/static/images/wx.gif)
 
-# 此版本源代码未更新
-![](https://github.com/yiluxiangbei87110/vue-chat/blob/master/static/images/new.gif)
+### 此版本源代码未更新
+
+<img src="https://github.com/yiluxiangbei87110/vue-chat/blob/master/static/images/new.gif"  height="285" width="505">
 
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+

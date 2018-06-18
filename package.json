@@ -1,8 +1,8 @@
 {
-  "name": "wapchat",
+  "name": "vue-chat",
   "version": "1.0.0",
-  "description": "wxcrm wapchat",
-  "author": "taylor <709161610@qq.com>",
+  "description": "vue-chat",
+  "author": "Felix",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

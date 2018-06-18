@@ -6,7 +6,8 @@
             <li v-for="items in ScoreDB.scoreDatas">
                 <span>{{items.scoreTitle}}</span>
                 <nav>     
-                    <a href="javascript:;"  v-for="(item ,index) in items.scoreArr" @click="scoreFuc(index+1, items.scoreFlag,items.scoreArr)" :class="[item==index ? 'xw-score-active' : 'xw-score-notActiv']"></a>
+                    <a href="javascript:;"  v-for="(item ,index) in items.scoreArr"
+                     @click="scoreFuc(index+1, items.scoreFlag,items.scoreArr)" :class="[item==index ? 'xw-score-active' : 'xw-score-notActiv']"></a>
                 </nav>
                 <input type="hidden" :value="Math.max.apply(null,items.scoreArr)+1" />
             </li>
