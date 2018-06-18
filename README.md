@@ -33,7 +33,7 @@ npm test
 
 ### 此版本源代码未更新
 
-<img src="https://github.com/yiluxiangbei87110/vue-chat/blob/master/static/images/new.gif"  height="285" width="505">
+<img src="https://github.com/yiluxiangbei87110/vue-chat/blob/master/static/images/new.gif"  width="285" height="505">
 
 
 
